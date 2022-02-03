@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <meta name="author" content="Dawid Linek">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="resources/style.css" />
+
+    <title>Simulations</title>
+    <style>
+        .accordion-item:not(:first-of-type) {
+            /* border-top: 1px rgb(229 231 235/1) solid; */
+        }
+
+        .accordion-item .accordion-button {
+            border-radius: calc(0.5rem - 1px);
+        }
+
+        .accordion-item {
+            box-shadow: 0 2px 15px 0 rgb(34 41 47 / 5%) !important;
+        }
+
+        .accordion-item:last-of-type .accordion-collapse {
+            border: 0
+        }
+
+        body {
+            /* color: #1d2f5d !important; */
+            font-family: "Rubik";
+            /* background-color: #f8f8f8; */
+        }
+
+        .accordion-button:not(.collapsed) {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='bg-gray-50 dark:bg-slate-900' style="min-height: 100vh;">
+
+
+        <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+            <input type="checkbox" id="checkbox_theme">
+        </label>
+        <div class="flex justify-center ">
+            <div class="block p-6 rounded-lg shadow-lg bg-white dark:bg-slate-800 sm:w-1/2 w-11/12 mt-48">
+                <h5 class="text-indigo-900 dark:text-slate-200 text-xl leading-tight font-medium mb-4 ml-1">Simulation
+                    list</h5>
+
+                <div class='accordion'>
+                    <div class='accordion-item bg-white dark:bg-gray-700 rounded-md mt-8'>
+                        <h2 class='accordion-header mb-0   shadow hover:shadow-md transition-all rounded-md'
+                            id='headingTwo5'>
+                            <button class='
+                  
+                        accordion-button
+                        collapsed
+                        relative
+                        flex
+                        items-center
+                        w-full
+                        py-4
+                        px-5
+                        text-base text-left
+                        bg-white dark:bg-gray-700
+                        text-indigo-900  dark:text-slate-200 
+                        border-0
+                        rounded-none
+                        transition
+                        focus:outline-none' type='button' data-bs-toggle='collapse' data-bs-target='#collapse0'
+                                aria-expanded='false' aria-controls='collapse0'>
+
+                                Name1
+
+                            </button>
+                        </h2>
+                        <div id='collapse0' class='accordion-collapse collapse' , aria-labelledby='headingTwo4'>
+
+                            <div class='accordion-body py-4 px-5'>
+                                <div class='flex items-start'>
+                                    <ul class='nav nav-tabs flex flex-col flex-wrap list-none border-b-0 pl-0 mr-4'
+                                        id='tabs-tabVertical0' role='tablist'>
+                                        <li class='nav-item flex-grow text-center ' role='presentation'>
+                                            <a href='#tabs-homeVertical0' class='
+            nav-link
+            block
+            font-medium
+            text-xs
+            leading-tight
+            uppercase
+            bg-white dark:bg-gray-700
+            text-indigo-900  dark:text-slate-200 
+            border-x-0 border-t-0 border-b-2 border-transparent
+            px-6
+            py-3
+            my-2
+            hover:border-transparent hover:bg-gray-100
+            focus:border-transparent
+            active
+          ' id='tabs-home-tabVertical' data-bs-toggle='pill' data-bs-target='#tabs-homeVertical0' role='tab'
+                                                aria-controls='tabs-homeVertical0' aria-selected='true'>Home</a>
+                                        </li>
+                                        <li class='nav-item flex-grow text-center' role='presentation'>
+                                            <a href='#tabs-tableVertical0' class='
+            nav-link
+            block
+            font-medium
+            text-xs
+            leading-tight
+            uppercase
+            bg-white dark:bg-gray-700
+            text-indigo-900  dark:text-slate-200 
+            border-x-0 border-t-0 border-b-2 border-transparent
+            px-6
+            py-3
+            my-2
+            hover:border-transparent hover:bg-gray-100
+            focus:border-transparent
+          ' id='tabs-table-tabVertical' data-bs-toggle='pill' data-bs-target='#tabs-tableVertical0' role='tab'
+                                                aria-controls='tabs-tableVertical0' aria-selected='false'>Table</a>
+                                        </li>
+                                        <li class='nav-item flex-grow text-center' role='presentation'>
+                                            <a href='#tabs-updateVertical0' class='
+            nav-link
+            block
+            font-medium
+            text-xs
+            leading-tight
+            uppercase
+            bg-white dark:bg-gray-700
+            text-indigo-900  dark:text-slate-200 
+            border-x-0 border-t-0 border-b-2 border-transparent
+            px-6
+            py-3
+            my-2
+            hover:border-transparent hover:bg-gray-100
+            focus:border-transparent
+          ' id='tabs-update-tabVertical' data-bs-toggle='pill' data-bs-target='#tabs-updateVertical0' role='tab'
+                                                aria-controls='tabs-updateVertical0' aria-selected='false'>Update</a>
+                                        </li>
+                                    </ul>
+                                    <div class='tab-content w-full' id='tabs-tabContentVertical'>
+                                        <div class='tab-pane fade show active' id='tabs-homeVertical0' role='tabpanel'
+                                            aria-labelledby='tabs-home-tabVertical0'>
+
+
+                                            <div class='flex flex-wrap '>
+
+                                                <div class='w-48 h-48  hover:shadow-xl transition-all block m-3 p-6 rounded-lg shadow-lg bg-white dark:bg-slate-800
+        text-indigo-900  dark:text-slate-200 '>
+                                                    <h1 class='text-center text-2xl '>Expected return</h1>
+                                                    <p class='text-xl text-center mt-3'> 120% </p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class='tab-pane fade' id='tabs-tableVertical0' role='tabpanel'
+                                            aria-labelledby='tabs-table-tabVertical0'>
+
+                                            <div class='flex flex-col 
+        text-indigo-900 dark:text-slate-200'>
+                                                <div class='overflow-x-auto sm:-mx-6 lg:-mx-8'>
+                                                    <div class='py-2 inline-block min-w-full sm:px-6 lg:px-8'>
+                                                        <div class='overflow-hidden'>
+                                                            <table class='min-w-full'>
+                                                                <thead class='border-b'>
+                                                                    <tr
+                                                                        class=' bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 transition-all'>
+                                                                        <th scope='col'
+                                                                            class='text-sm font-medium px-6 py-4 text-left '>
+                                                                            ID
+                                                                        </th>
+
+                                                                        <th scope='col'
+                                                                            class='text-sm font-medium px-6 py-4 text-left '>
+                                                                            Name
+                                                                        </th>
+
+                                                                        <th scope='col'
+                                                                            class='text-sm font-medium px-6 py-4 text-left '>
+                                                                            Value
+                                                                        </th>
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr
+                                                                        class=' bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 transition-all'>
+                                                                        <td
+                                                                            class='text-sm font-light px-6 py-4 whitespace-nowrap'>
+                                                                            1
+                                                                        </td>
+                                                                        <td
+                                                                            class='text-sm font-light px-6 py-4 whitespace-nowrap'>
+                                                                            APPL
+                                                                        </td>
+                                                                        <td
+                                                                            class='text-sm font-light px-6 py-4 whitespace-nowrap'>
+                                                                            100eur
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr
+                                                                        class=' bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 transition-all'>
+                                                                        <td
+                                                                            class='text-sm font-light px-6 py-4 whitespace-nowrap'>
+                                                                            2
+                                                                        </td>
+                                                                        <td
+                                                                            class='text-sm font-light px-6 py-4 whitespace-nowrap'>
+                                                                            GOOGL
+                                                                        </td>
+                                                                        <td
+                                                                            class='text-sm font-light px-6 py-4 whitespace-nowrap'>
+                                                                            1200eur
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr
+                                                                        class=' bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 transition-all'>
+                                                                        <td
+                                                                            class='text-sm font-light px-6 py-4 whitespace-nowrap'>
+                                                                            3
+                                                                        </td>
+                                                                        <td
+                                                                            class='text-sm font-light px-6 py-4 whitespace-nowrap'>
+                                                                            ALV
+                                                                        </td>
+                                                                        <td
+                                                                            class='text-sm font-light px-6 py-4 whitespace-nowrap'>
+                                                                            23eur
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='tab-pane fade' id='tabs-updateVertical0' role='tabpanel'
+                                            aria-labelledby='tabs-update-tabVertical0'>
+                                            <div class='flex sm:flex-nowrap flex-wrap w-full'>
+
+                                                <div class='form-floating mb-3 ml-2 w-full sm:w-1/2 '>
+                                                    <input type='text' name='input1' class='form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        dark:text-gray-100
+        bg-white bg-clip-padding
+        dark:bg-slate-700
+        border border-solid border-gray-300 dark:border-gray-800
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none' placeholder='Write here...'>
+                                                    <label class='text-gray-700   dark:text-gray-100'>Example input
+                                                        1</label>
+                                                </div>
+
+                                                <div class='form-floating mb-3 ml-2 w-full sm:w-1/2 '>
+                                                    <input type='text' name='input2' class='form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        dark:text-gray-100
+        bg-white bg-clip-padding
+        dark:bg-slate-700
+        border border-solid border-gray-300 dark:border-gray-800
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none' placeholder='Write here...'>
+                                                    <label class='text-gray-700   dark:text-gray-100'>Example input
+                                                        2</label>
+                                                </div>
+                                            </div>
+
+                                            <div class='pr-2'>
+                                                <button type='button'
+                                                    class=' ml-2 w-full inline-block px-6 py-2 border-2 border-blue-600 text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out'>Save</button>
+
+                                                <button type='button'
+                                                    class=' ml-2 mt-2 w-full inline-block px-6 py-2 border-2 border-red-600 text-red-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out'>Delete</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class='accordion-item bg-white dark:bg-gray-700 rounded-md mt-8'>
+                        <h2 class='accordion-header mb-0   shadow hover:shadow-md transition-all rounded-md'
+                            id='headingTwo5'>
+                            <button class='
+                  
+                        accordion-button
+                        collapsed
+                        relative
+                        flex
+                        items-center
+                        w-full
+                        py-4
+                        px-5
+                        text-base text-left
+                        bg-white dark:bg-gray-700
+                        text-indigo-900  dark:text-slate-200 
+                        border-0
+                        rounded-none
+                        transition
+                        focus:outline-none' type='button' data-bs-toggle='collapse' data-bs-target='#collapse1'
+                                aria-expanded='false' aria-controls='collapse1'>
+
+                                Name2
+
+                            </button>
+                        </h2>
+                        <div id='collapse1' class='accordion-collapse collapse' , aria-labelledby='headingTwo4'>
+
+                            <div class='accordion-body py-4 px-5'>
+                                <div class='flex items-start'>
+                                    <ul class='nav nav-tabs flex flex-col flex-wrap list-none border-b-0 pl-0 mr-4'
+                                        id='tabs-tabVertical1' role='tablist'>
+                                        <li class='nav-item flex-grow text-center ' role='presentation'>
+                                            <a href='#tabs-homeVertical1' class='
+            nav-link
+            block
+            font-medium
+            text-xs
+            leading-tight
+            uppercase
+            bg-white dark:bg-gray-700
+            text-indigo-900  dark:text-slate-200 
+            border-x-0 border-t-0 border-b-2 border-transparent
+            px-6
+            py-3
+            my-2
+            hover:border-transparent hover:bg-gray-100
+            focus:border-transparent
+            active
+          ' id='tabs-home-tabVertical' data-bs-toggle='pill' data-bs-target='#tabs-homeVertical1' role='tab'
+                                                aria-controls='tabs-homeVertical1' aria-selected='true'>Home</a>
+                                        </li>
+                                        <li class='nav-item flex-grow text-center' role='presentation'>
+                                            <a href='#tabs-tableVertical1' class='
+            nav-link
+            block
+            font-medium
+            text-xs
+            leading-tight
+            uppercase
+            bg-white dark:bg-gray-700
+            text-indigo-900  dark:text-slate-200 
+            border-x-0 border-t-0 border-b-2 border-transparent
+            px-6
+            py-3
+            my-2
+            hover:border-transparent hover:bg-gray-100
+            focus:border-transparent
+          ' id='tabs-table-tabVertical' data-bs-toggle='pill' data-bs-target='#tabs-tableVertical1' role='tab'
+                                                aria-controls='tabs-tableVertical1' aria-selected='false'>Table</a>
+                                        </li>
+                                        <li class='nav-item flex-grow text-center' role='presentation'>
+                                            <a href='#tabs-updateVertical1' class='
+            nav-link
+            block
+            font-medium
+            text-xs
+            leading-tight
+            uppercase
+            bg-white dark:bg-gray-700
+            text-indigo-900  dark:text-slate-200 
+            border-x-0 border-t-0 border-b-2 border-transparent
+            px-6
+            py-3
+            my-2
+            hover:border-transparent hover:bg-gray-100
+            focus:border-transparent
+          ' id='tabs-update-tabVertical' data-bs-toggle='pill' data-bs-target='#tabs-updateVertical1' role='tab'
+                                                aria-controls='tabs-updateVertical1' aria-selected='false'>Update</a>
+                                        </li>
+                                    </ul>
+                                    <div class='tab-content w-full' id='tabs-tabContentVertical'>
+                                        <div class='tab-pane fade show active' id='tabs-homeVertical1' role='tabpanel'
+                                            aria-labelledby='tabs-home-tabVertical1'>
+
+
+                                            <div class='flex flex-wrap '>
+
+                                                <div class='w-48 h-48  hover:shadow-xl transition-all block m-3 p-6 rounded-lg shadow-lg bg-white dark:bg-slate-800
+        text-indigo-900  dark:text-slate-200 '>
+                                                    <h1 class='text-center text-2xl '>Strategy value</h1>
+                                                    <p class='text-xl text-center mt-3'> 1200eur </p>
+                                                </div>
+                                                <div class='w-48 h-48  hover:shadow-xl transition-all block m-3 p-6 rounded-lg shadow-lg bg-white dark:bg-slate-800
+        text-indigo-900  dark:text-slate-200 '>
+                                                    <h1 class='text-center text-2xl '>Created at</h1>
+                                                    <p class='text-xl text-center mt-3'> 10.12.2021 </p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class='tab-pane fade' id='tabs-tableVertical1' role='tabpanel'
+                                            aria-labelledby='tabs-table-tabVertical1'>
+
+                                            <div class='flex flex-col 
+        text-indigo-900 dark:text-slate-200'>
+                                                <div class='overflow-x-auto sm:-mx-6 lg:-mx-8'>
+                                                    <div class='py-2 inline-block min-w-full sm:px-6 lg:px-8'>
+                                                        <div class='overflow-hidden'>
+                                                            <table class='min-w-full'>
+                                                                <thead class='border-b'>
+                                                                    <tr
+                                                                        class=' bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 transition-all'>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='tab-pane fade' id='tabs-updateVertical1' role='tabpanel'
+                                            aria-labelledby='tabs-update-tabVertical1'>
+                                            <div class='flex sm:flex-nowrap flex-wrap w-full'>
+
+                                                <div class='form-floating mb-3 ml-2 w-full sm:w-1/2 '>
+                                                    <input type='text' name='input1' class='form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        dark:text-gray-100
+        bg-white bg-clip-padding
+        dark:bg-slate-700
+        border border-solid border-gray-300 dark:border-gray-800
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none' placeholder='Write here...'>
+                                                    <label class='text-gray-700   dark:text-gray-100'>Example input
+                                                        1</label>
+                                                </div>
+
+                                                <div class='form-floating mb-3 ml-2 w-full sm:w-1/2 '>
+                                                    <input type='text' name='input2' class='form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        dark:text-gray-100
+        bg-white bg-clip-padding
+        dark:bg-slate-700
+        border border-solid border-gray-300 dark:border-gray-800
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none' placeholder='Write here...'>
+                                                    <label class='text-gray-700   dark:text-gray-100'>Example input
+                                                        2</label>
+                                                </div>
+                                            </div>
+
+                                            <div class='pr-2'>
+                                                <button type='button'
+                                                    class=' ml-2 w-full inline-block px-6 py-2 border-2 border-blue-600 text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out'>Save</button>
+
+                                                <button type='button'
+                                                    class=' ml-2 mt-2 w-full inline-block px-6 py-2 border-2 border-red-600 text-red-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out'>Delete</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script>
+        //determines if the user has a set theme
+        function detectColorScheme() {
+            var theme = "light";    //default to light
+
+            //local storage is used to override OS theme settings
+            if (localStorage.getItem("theme")) {
+                if (localStorage.getItem("theme") == "dark") {
+                    var theme = "dark";
+                }
+            } else if (!window.matchMedia) {
+                //matchMedia method not supported
+                return false;
+            } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                //OS theme setting detected as dark
+                // var theme = "dark";
+            }
+
+            //dark theme preferred, set document with a `data-theme` attribute
+            if (theme == "dark") {
+                document.body.classList.add('dark');
+            }
+        }
+        detectColorScheme();
+
+        //identify the toggle switch HTML element
+        const toggleSwitch = document.querySelector('#theme-switch input[type="checkbox"]');
+
+        //function that changes the theme, and sets a localStorage variable to track the theme between page loads
+        function switchTheme(e) {
+            if (e.target.checked) {
+                localStorage.setItem('theme', 'dark');
+                document.body.classList.add('dark');
+                toggleSwitch.checked = true;
+            } else {
+                localStorage.setItem('theme', 'light');
+                document.body.classList.remove('dark');
+                toggleSwitch.checked = false;
+            }
+        }
+
+        //listener for changing themes
+        toggleSwitch.addEventListener('change', switchTheme, false);
+
+        //pre-check the dark-theme checkbox if dark-theme is set
+        if (document.body.classList.contains('dark')) {
+            toggleSwitch.checked = true;
+        }
+
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    </div>
+</body>
+
+</html>

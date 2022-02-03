@@ -1,0 +1,23 @@
+.accordion-item:not(:first-of-type) {
+    /* border-top: 1px rgb(229 231 235/1) solid; */
+}
+
+.accordion-item .accordion-button {
+    border-radius: calc(0.5rem - 1px);
+}
+
+.accordion-item{
+    box-shadow: 0 2px 15px 0 rgb(34 41 47 / 5%) !important;
+}
+.accordion-item:last-of-type .accordion-collapse{
+    border:0
+}
+body{
+    /* color: #1d2f5d !important; */
+    font-family: "Rubik";
+    /* background-color: #f8f8f8; */
+}
+.accordion-button:not(.collapsed) {
+        -webkit-box-shadow:none;
+     box-shadow:none;
+}
