@@ -23,5 +23,5 @@ All data can be edited in ./src/index.php file
 There you define all simulations. There you can add properties and table data.
 
 ## Only one html file
-If you don`t want to use php files, you can used exported html file.
-This file is in main folder and it`s name is static.html
+If you dont want to use php files, you can used exported html file.
+This file is in main folder and its name is static.html
