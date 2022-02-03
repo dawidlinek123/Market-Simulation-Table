@@ -11,7 +11,7 @@ $simulations=[
 $simulations[1]->addProperty("Strategy value",'1000eur');
 $simulations[1]->addProperty("Created at",'10.12.2021');
 
-//Ten you can edit every ptoperty
+//Then you can edit every property
 $simulations[1]->properties['Strategy value']='1200eur';
 
 //Every simulation has tableData property, there you can add data wich will be displayed in table
