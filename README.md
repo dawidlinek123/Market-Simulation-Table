@@ -3,6 +3,8 @@
 Table containing simulations
 
 ## Runing 
+Recomended php version >= 8.0
+
 ```
 cd public 
 php -S 127.0.0.1:80
